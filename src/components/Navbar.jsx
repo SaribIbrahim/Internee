@@ -7,23 +7,23 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='flex flex-row justify-between items-center py-4 xl:px-[100px]  border-b border-gray-800 px-5 ' >
-        <div className='w-[180px] md:w-[200px]'>
+      <div className='fixed top-0 left-0 w-full z-50 flex flex-row justify-between items-center py-4 xl:px-[100px]  border-b border-gray-800 px-5 bg-black ' >
+        <div className='w-[180px] md:w-[200px] cursor-pointer  '>
           <img src="./white-internee.png" alt="Logo" />
         </div>
         <div>
           <ul className=' hidden lg:flex flex-row gap-4 cursor-pointer text-sm '>
-            <li>Home</li>
-            <li>Internship</li>
-            <li>Graduate Program</li>
-            <li>Student Ambassador</li>
+            <li className="hover:text-green-500 transition-all duration-300">Home</li>
+            <li className="hover:text-green-500 transition-all duration-300">Internship</li>
+            <li className="hover:text-green-500 transition-all duration-300">Graduate Program</li>
+            <li className="hover:text-green-500 transition-all duration-300">Student Ambassador</li>
           </ul>
         </div>
         <div className='hidden lg:flex flex-row gap-4'>
-          <button className='bg-green-500 text-white px-6 py-2 rounded-2xl'>
+          <button className='bg-green-500 text-white px-6 py-2 rounded-2xl cursor-pointer'>
             <p>Job Portal</p>
           </button>
-          <button className='bg-black px-6 py-2 rounded-2xl text-white border-green-500 border'>
+          <button className='bg-black px-6 py-2 rounded-2xl text-white border-green-500 border cursor-pointer'>
             <p>Dashboard</p>
           </button>
         </div>
