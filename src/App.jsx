@@ -1,21 +1,28 @@
-import './App.css'
-import Hero from './components/Hero'
-import Internship from './components/Internship'
-import Navbar from './components/Navbar'
-import Partnership from './components/Partnership'
+import "./App.css";
+import Home from "./pages/Home";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import Form from "./components/Form";
 
 function App() {
-  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/" element={<Home />} />
+        <Route path="/form" element={<Form />} />
+      </>
+    )
+  );
 
   return (
     <>
-      <Navbar/>
-      <main className='pt-[72px] mt-4'></main>
-      <Hero/>
-      <Partnership/>
-      <Internship/>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
