@@ -1,4 +1,6 @@
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
 import {
   Route,
@@ -21,6 +23,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ToastContainer/>
     </>
   );
 }
