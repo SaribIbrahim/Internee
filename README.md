@@ -1,12 +1,69 @@
-# React + Vite
+# Internee.pk Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React and Vite that connects students with internship opportunities. The portal features a clean UI with Tailwind CSS styling and responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive landing page with hero section
+- Internship listings with categories:
+  - Frontend Development 
+  - Backend Development
+  - Mobile App Development
+  - Graphic Design
+  - Chatbot Development
+  - Machine Learning
+- Responsive navigation menu
+- Form validation using Formik and Yup
+- Toast notifications for form submissions
+- Partner organization showcase
+- Mobile-friendly design
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- React Router v7 
+- Tailwind CSS
+- Formik + Yup for form handling
+- React Toastify for notifications
+- ESLint for code quality
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```sh
+npm install
+```
+
+3. Run development server:
+```sh
+npm run dev
+```
+
+4. Build for production:
+```sh
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── Form.jsx         # Application form with validation
+│   ├── Hero.jsx         # Landing page hero section
+│   ├── Internship.jsx   # Internship listings
+│   └── Navbar.jsx       # Navigation component
+├── pages/               # Route pages
+│   └── Home.jsx         # Main landing page
+└── App.jsx              # Root component with routing
+```
+
+## Contributing
+
+Feel free to submit issues and pull requests to help improve the project.
+
+## License
+
+This project is available under the MIT License.
